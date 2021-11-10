@@ -5,10 +5,11 @@ from executors import download_images, filter_and_save_images
 
 def main():
 
-    imgs = ImagesLink("http://pikstok.ru/post/skachat-krasivye-kartinki-628132")
+    imgs = ImagesLink("https://mirpozitiva.ru/photo/43190-kamennoe-iskusstvo.html")
     imgs.get_base_url()
     imgs.get_image_urls()
     page_image_links = imgs.get_complete_image_urls()
+    print(page_image_links)
     download_images(page_image_links)
 
     # OPTIONAL 

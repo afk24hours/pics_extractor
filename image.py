@@ -18,7 +18,7 @@ def get_imgsize_extension(img_url):
 # SIMPLE DOWNLOAD
 def retrieve_image(img_url): 
     data, ext = get_imgsize_extension(img_url)
-    if len(data.read()) <= 512000 and len(data.read()) > 5000:
+    if len(data.read()) <= 256000:
         urllib.request.urlretrieve(img_url, generate_name(ext))
 
 # FUNCTIONALITY TO FILTER WHOLE IMAGES FOLDER

@@ -142,3 +142,5 @@ cython_debug/
 
 #
 /frontend
+/images
+/images-filtered

@@ -46,8 +46,8 @@ class ImagesLink:
                 str(i.attrs['src']).endswith(".png"):
                 if str(i.attrs['src']).startswith("/"):
                     full_url = self.base_url + str(i.attrs['src'])[1:]
-                else:
-                    full_url = self.base_url + str(i.attrs['src'])
+                elif not(str(i.attrs['src']).startswith("http")):
+                    full_url = str(i.attrs['src'])
                 self.img_links.append(full_url)
         return self.img_links
 
