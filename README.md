@@ -3,6 +3,7 @@
 Parses given URL and tries to find *.jpeg , *.jpg, *.png files on a webpage which are not bigger than 512KB. Limited to download 25 images by default.
 Uses process pool executor to run concurrent downloads
 Saves images to /images folder
+
 *OPTIONAL* 
 You can add filter to downloaded images using Pillow and save processed images to /filtered-images folder. Also uses multiprocessing for speed purposes. 
 
