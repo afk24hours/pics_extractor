@@ -4,6 +4,9 @@ Parses given URL and tries to find *.jpeg , *.jpg, *.png files on a webpage whic
 Uses process pool executor to run concurrent downloads
 Saves images to /images folder
 
+Just paste a URL and test what you get :)
+    imgs = ImagesLink("https://mirpozitiva.ru/photo/43190-kamennoe-iskusstvo.html")
+
 *OPTIONAL* 
 You can add filter to downloaded images using Pillow and save processed images to /filtered-images folder. Also uses multiprocessing for speed purposes. 
 
