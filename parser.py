@@ -37,8 +37,8 @@ class ImagesLink:
                 continue
             if str(i.attrs['src']).startswith("http") and \
                 (str(i.attrs['src']).endswith(".jpg") or \
-                    str(i.attrs['src']).endswith(".jpg") or \
-                        str(i.attrs['src']).endswith(".jpg")):
+                    str(i.attrs['src']).endswith(".jpeg") or \
+                        str(i.attrs['src']).endswith(".png")):
                 full_url = str(i.attrs['src'])
                 self.img_links.append(full_url)
             elif str(i.attrs['src']).endswith(".jpg") or \
